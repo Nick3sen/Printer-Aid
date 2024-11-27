@@ -68,7 +68,6 @@ h2 {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 10px 0; /* Voeg ruimte toe tussen invoervelden */
 }
 
 input {
@@ -93,6 +92,7 @@ input {
     width: 100px;
     color: aliceblue;
     border-style: none;
+    margin-bottom: 15px;
 }
 
 /* Responsieve layout voor mobiele apparaten */
