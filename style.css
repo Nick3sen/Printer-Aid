@@ -3,7 +3,8 @@ body, html {
     margin: 0;
     padding: 0;
     user-select: none;
-    /* overflow: hidden; */
+    overflow: hidden;
+    overflow-y: scroll;
     background-image: url(media/background.avif);
     background-size: cover; /* Zorg dat de achtergrond zich aanpast */
     scroll-behavior: smooth;
@@ -11,6 +12,7 @@ body, html {
 
 nav {
     margin: 15px;
+    
 }
 
 .logo {
