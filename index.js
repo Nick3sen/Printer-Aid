@@ -17,6 +17,45 @@ const firebaseConfig = {
   measurementId: "G-BFZTJTGYRC"
 };
 
-// Initialize Firebase
+//initialize database
+
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const database = getDatabase(app);
+
+// Elementen ophalen
+const emailInput = document.getElementById('email');
+const nameInput = document.getElementById('namefirst');
+const surnameInput = document.getElementById('namelast');
+const wantsEmailCheckbox = document.getElementById('wantsEmail');
+const submitButton = document.getElementById('submitButton');
+
+// Evenementenlistener voor de knop
+submitButton.addEventListener('click', (e) => {
+  e.preventDefault(); // Voorkom standaard herladen van de pagina
+
+  // Waarden ophalen
+  const email = emailInput.value;
+  const name = nameInput.value;
+  const surname = surnameInput.value;
+  const wantsEmail = wantsEmailCheckbox.checked;
+
+  // Data naar Firebase sturen
+  const usersRef = ref(database, 'users');
+  push(usersRef, {
+    email: email,
+    name: name,
+    surname: surname,
+    wantsEmail: wantsEmail
+  })
+  .then(() => {
+    alert('Gegevens succesvol verzonden!');
+    // Optioneel: velden resetten
+    emailInput.value = '';
+    nameInput.value = '';
+    surnameInput.value = '';
+    wantsEmailCheckbox.checked = false;
+  })
+  .catch((error) => {
+    console.error('Fout bij verzenden:', error);
+  });
+});
