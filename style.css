@@ -1,20 +1,25 @@
-body, html{
+/* Algemene stijlen voor alle apparaten */
+body, html {
     margin: 0;
     padding: 0;
     user-select: none;
     overflow: hidden;
     background-image: url(media/background.avif);
+    background-size: cover; /* Zorg dat de achtergrond zich aanpast */
     scroll-behavior: smooth;
 }
-nav{
+
+nav {
     margin: 15px;
 }
-.logo{
+
+.logo {
     height: 60px;
     width: auto;
     float: left;
 }
-.database-box{
+
+.database-box {
     float: right;
     background-color: rgb(29, 113, 113);
     border-radius: 15px;
@@ -25,12 +30,13 @@ nav{
     justify-content: center;
     align-items: center;
 }
-h2{
+
+h2 {
     margin: 0;
     font-size: 15px;
 }
 
-.login-body{
+.login-body {
     margin-top: 35%;
     background-image: linear-gradient(rgb(143, 143, 143), rgb(192, 192, 192));
     width: 80%;
@@ -38,28 +44,31 @@ h2{
     margin-left: 10%;
     height: 600px;
 }
-.login-header{
+
+.login-header {
     text-align: center;
     color: aliceblue;
     justify-content: center;
 }
 
-.login-input{
+.login-input {
     margin-top: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: aliceblue;
+    gap: 15px; /* Voeg ruimte tussen items toe */
 }
 
-.login-combo{
+.login-combo {
     width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin: 10px 0; /* Voeg ruimte toe tussen invoervelden */
 }
 
-input{
+input {
     width: 70%;
     height: 20px;
     border-radius: 5px;
@@ -67,18 +76,65 @@ input{
     font-size: 10px;
 }
 
-.check{
+.check {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 15px;
 }
 
-.login-button{
+.login-button {
     background-color: rgb(95, 139, 139);
     border-radius: 15px;
     height: 30px;
     width: 100px;
     color: aliceblue;
     border-style: none;
+}
+
+/* Responsieve layout voor mobiele apparaten */
+@media (max-width: 768px) {
+    .login-body {
+        margin-top: 10%;
+        width: 90%; /* Maak breder op kleine schermen */
+        margin-left: 5%;
+        height: auto; /* Pas hoogte aan voor content */
+    }
+
+    .login-header h1, .login-header h3 {
+        font-size: 20px; /* Kleiner lettertype voor kleinere schermen */
+    }
+
+    input {
+        width: 90%; /* Breder op mobiele apparaten */
+        font-size: 12px;
+    }
+
+    .login-button {
+        width: 80%; /* Knop past beter op mobiel */
+        font-size: 14px;
+    }
+    
+    .database-box {
+        width: 80px; /* Maak kleiner voor mobiele schermen */
+    }
+}
+
+/* Desktop-specific styles */
+@media (min-width: 1024px) {
+    .login-body {
+        margin-top: 15%;
+        width: 60%; /* Groter op desktop */
+        margin-left: 20%;
+        height: 600px; /* Zorg voor vaste hoogte */
+    }
+
+    .login-header h1, .login-header h3 {
+        font-size: 30px; /* Groter lettertype op desktop */
+    }
+
+    input {
+        width: 50%; /* Behoud compacte invoervelden */
+        font-size: 14px;
+    }
 }
