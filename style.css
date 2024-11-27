@@ -2,8 +2,9 @@ body, html{
     margin: 0;
     padding: 0;
     user-select: none;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-image: url(media/background.avif);
+    scroll-behavior: smooth;
 }
 nav{
     margin: 15px;
