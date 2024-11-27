@@ -67,3 +67,19 @@ input{
     text-align: center;
     font-size: 10px;
 }
+
+.check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+}
+
+.login-button{
+    background-color: rgb(95, 139, 139);
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    color: aliceblue;
+    border-style: none;
+}
