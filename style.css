@@ -12,7 +12,8 @@ body, html {
 
 nav {
     margin: 15px;
-    
+    height: 100px;
+    margin-bottom: 10%;
 }
 
 .logo {
