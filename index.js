@@ -40,7 +40,7 @@ submitButton.addEventListener('click', (e) => {
   const wantsEmail = wantsEmailCheckbox.checked;
 
   // Data naar Firebase sturen
-  const usersRef = ref(database, 'users');
+  const usersRef = ref(database, 'prints');
   push(usersRef, {
     email: email,
     name: name,

@@ -13,7 +13,7 @@ body, html {
 nav {
     margin: 15px;
     height: 100px;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
 }
 
 .logo {
@@ -45,7 +45,7 @@ h2 {
     width: 80%;
     border-radius: 25px;
     margin-left: 10%;
-    height: 600px;
+    height: 100%;
 }
 
 .login-header {
@@ -60,7 +60,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     color: aliceblue;
-    gap: 15px; /* Voeg ruimte tussen items toe */
+    /* gap: 15px; Voeg ruimte tussen items toe */
 }
 
 .login-combo {
@@ -121,15 +121,19 @@ input {
     .database-box {
         width: 80px; /* Maak kleiner voor mobiele schermen */
     }
+    .UM2{
+        height: 150px;
+        width: auto;
+    }
 }
 
 /* Desktop-specific styles */
 @media (min-width: 1024px) {
     .login-body {
-        margin-top: 15%;
+        margin-top: 5%;
         width: 60%; /* Groter op desktop */
         margin-left: 20%;
-        height: 600px; /* Zorg voor vaste hoogte */
+        height: 100%; /* Zorg voor vaste hoogte */
     }
 
     .login-header h1, .login-header h3 {
@@ -139,5 +143,9 @@ input {
     input {
         width: 50%; /* Behoud compacte invoervelden */
         font-size: 14px;
+    }
+    .UM2{
+        height: 250px;
+        width: auto;
     }
 }
