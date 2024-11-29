@@ -71,11 +71,14 @@ h2 {
 }
 
 input {
-    width: 70%;
+    width: 50%;
     height: 20px;
     border-radius: 5px;
     text-align: center;
     font-size: 10px;
+    background-color: rgb(146, 154, 158);
+    border-style: solid;
+    color: white;
 }
 
 .check {
@@ -93,6 +96,9 @@ input {
     color: aliceblue;
     border-style: none;
     margin-bottom: 15px;
+}
+.login-button.click{
+    background-color: brown;
 }
 
 /* Responsieve layout voor mobiele apparaten */
