@@ -13,6 +13,7 @@ void loop() {
   delay(100);                    // wait a little
 
   if LDRValue >= onValue{
-    
+    // send on signal
+
   }
 }
