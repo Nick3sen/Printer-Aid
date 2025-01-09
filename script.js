@@ -1,4 +1,4 @@
-// Import the functions you need from the SDKs you need
+live// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -29,9 +29,7 @@ const surnameInput = document.getElementById('namelast');
 const wantsEmailCheckbox = document.getElementById('wantsEmail');
 const submitButton = document.getElementById('submitButton');
 
-function myFunction(){
-  console.log('clicked');
-}
+
 
 // Evenementenlistener voor de knop
 document.getElementById("submitButton").addEventListener("click", (e) => {

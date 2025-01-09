@@ -38,11 +38,16 @@
                 <input type="checkbox" id="wantsEmail">
             </div>
             
-            <button class="login-button" id="submitButton">Login</button>
-            <!-- <script>document.getElementById("submitButton").addEventListener("click", () => {
-                console.log("Knop geklikt!");
-            });</script> -->
+            <!-- <button class="login-button" id="submitButton">Login</button> -->
+            <input type="button" class="login-button" id="submitButton" onclick="myFunction()">
+
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    function myFunction(){
+        console.log('clicked');
+}
+</script>
